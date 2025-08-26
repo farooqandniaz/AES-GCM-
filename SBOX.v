@@ -1,4 +1,11 @@
-
+/*
+ * Module Name  : aes_sbox
+ * Author       : Farooq Niaz
+ * Created      : May 22, 2025
+ * Last Modified: May 22, 2025, 13:35
+ * Version      : 1.0
+ * Description  : AES S Box (8×8 substitution).   
+*/
 module aes_sbox (
     input  wire [7:0] sbox_in,  // 8-bit input to the S-Box
     output reg  [7:0] sbox_out  // 8-bit output from the S-Box
@@ -79,5 +86,6 @@ module aes_sbox (
     always @(*) begin
         sbox_out = sbox_rom[sbox_in];
     end
+
 
 endmodule
