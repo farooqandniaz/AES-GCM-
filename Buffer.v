@@ -1,4 +1,11 @@
-
+/*
+ * Module Name  : Buffer
+ * Author       : Farooq Niaz
+ * Created      : May 22, 2025
+ * Last Modified: May 22, 2025, 13:35
+ * Version      : 1.0
+ * Description  : This buffer of 28 slots(128 bits each) is used at input to accomodate incoming data during the process of key expansion   
+*/
 module Buffer#	(
 				parameter DATA_WIDTH = 128, // Data width
 				parameter DELAY_CYCLES = 28 // Number of cycles to delay
@@ -73,5 +80,6 @@ module Buffer#	(
 				data_out <= buffer[DELAY_CYCLES-1]; // Output the last stage
 			end
     end
+
 
 endmodule
