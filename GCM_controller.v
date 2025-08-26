@@ -1,4 +1,11 @@
-
+/*
+ * Module Name  : GCM_Controller
+ * Author       : Farooq Niaz
+ * Created      : May 22, 2025
+ * Last Modified: May 22, 2025, 13:35
+ * Version      : 1.0
+ * Description  : GCM controller builds counter blocks (CTR), aligns data to GHASH and calculates final tags   
+*/
 module GCM_Controller	#	(
 							parameter DATA_WIDTH = 128, // AXI-Stream data width (e.g., 256 bits)
 							//parameter KEEP_WIDTH = DATA_WIDTH/8, // TKEEP width
@@ -579,5 +586,6 @@ function [127:0] barrel_shifter128;
 endfunction
 
 endmodule
+
 
 
