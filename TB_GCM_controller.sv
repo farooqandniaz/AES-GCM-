@@ -1,4 +1,17 @@
+/*
+ * Module Name  : TB_Full
+ * Author       : Farooq Niaz
+ * Created      : May 22, 2025
+ * Last Modified: May 22, 2025, 13:35
+ * Version      : 1.0
+ * Description  : Top level GCM testbench driving streaming payloads/AAD and checking timing.
+ *                Simulates all possible combinations of the m_axis_tready signal to evaluate 
+ *				  the design's response to different output backpressure conditions.
+*/
+
 /********************* Include High and Low cycles ***********************/
+
+
 `timescale 1ns / 1ps
 
 module TB_Full;
@@ -283,6 +296,7 @@ endmodule
 
 
 /*************************************************************************/
+
 
 
 
